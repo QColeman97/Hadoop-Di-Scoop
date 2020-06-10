@@ -42,17 +42,19 @@ public void map(Text key, Text value, Context context)
     String[] date = valueStr[0].split("/");
 
     if(valueStr.length == 24 &&
-        valueStr[19].length() > 0 &&
         valueStr[20].length() > 0 &&
         valueStr[21].length() > 0 &&
-        Character.isDigit(valueStr[19].charAt(0)) && 
-        Character.isDigit(valueStr[21].charAt(0)) &&
-        valueStr[20].charAt(0) == '$' &&
+        valueStr[22].length() > 0 &&
+        Character.isDigit(valueStr[20].charAt(0)) && 
+        Character.isDigit(valueStr[22].charAt(0)) &&
         date.length == 3) {
+        
+        String bottles = valueStr[20].replace("\"", "");
+        String sales = valueStr[21].replace("\"", "");
+        String vol = valueStr[22].replace("\"", "");
 
         String year = date[2];
-        double volume = Double.parseDouble(valueStr[21]) * Double.parseDouble(valueStr[19]);
-        String sales = valueStr[20].substring(1, valueStr[20].length());
+        double volume = Double.parseDouble(vol) * Double.parseDouble(bottles);
 
         String resString = "" + volume + "," + sales;
 
@@ -116,7 +118,7 @@ public void reduce( Text key, Iterable<Text> values, Context context)
       job.setJarByClass(IowaLiquor.class);  
 
    //  step 3:  Set Input and Output files
-       KeyValueTextInputFormat.addInputPath(job, new Path("/user/arpinto", "liquorSmall.csv")); // put what you need as input file
+       KeyValueTextInputFormat.addInputPath(job, new Path("/data/", "Iowa_Liquor_Sales.csv")); // put what you need as input file
        FileOutputFormat.setOutputPath(job, new Path("./test/","iowa-liquorSales")); // put what you need as output file
        job.setInputFormatClass(KeyValueTextInputFormat.class);            // let's make input a CSV file
 
