@@ -1,6 +1,6 @@
 // CSC 369: Distributed Computing
-// Quinn Coleman
-// qcoleman@calpoly.edu
+// Quinn Coleman, Alex Pinto, Logan Anderson
+// qcoleman@calpoly.edu, arpinto@calpoly.edu, lander24@calpoly.edu
 // Map-Reduce COVID Correlation Calc
 
 
