@@ -1,5 +1,5 @@
 Quinn Coleman, Alex Pinto, Logan Anderson
-qcoleman@calpoly.edu, arpinto@calpoly.edu, <logan's email>
+qcoleman@calpoly.edu, arpinto@calpoly.edu, lander24@calpoly.edu
 Lab 7 - CSC 369 Spring 2020
 
 
@@ -9,3 +9,15 @@ IowaLiquorSequential:
 
     - Must have Iowa_Liquor_Sales.csv in the same directory
 
+Prob 3:
+
+    - Output of Hadoop program "Correlation.java" goes to "./test/CovidCorrelation/"
+
+Data Generation:
+    - Generate extra files of different size for "Correlation.java" by running "source gen_files.sh".
+      IMPORTANT: In order to make larger files than original,
+      copies of "us-covid-counties.csv" named "ucc-<record number>.csv" must be in your cwd.
+      Files are lengthened/shortened by adding/removing lines to the original file.    
+
+    - Must manually type different input file into "Correlation.java" to use it.
+      "CovidCorrelation.java" has no command line args.
