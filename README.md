@@ -1,13 +1,7 @@
 # Hadoop Performance Benchmarking
 A performance experiment on sequential v.s. MapReduce frameworks using Apache Hadoop. Experiments were run on the Cal Poly on-campus cluster. 
 
-### View our [Report with Results](https://docs.google.com/document/d/1j5omkh1boeXXv9z7K9xetyM_Q-MoL19NoP6EpbJwG3s/edit?usp=sharing)
-
-`
-Quinn Coleman, Alex Pinto, Logan Anderson
-qcoleman@calpoly.edu, arpinto@calpoly.edu, lander24@calpoly.edu
-Lab 7 - CSC 369 Spring 2020
-`
+### View our [Lab Report](https://docs.google.com/document/d/1j5omkh1boeXXv9z7K9xetyM_Q-MoL19NoP6EpbJwG3s/edit?usp=sharing)
 
 ### Program Running Information
 
@@ -25,3 +19,8 @@ Data Generation:
 
 - Must manually type different input file into "Correlation.java" to use it.
       "CovidCorrelation.java" has no command line args.
+
+
+Quinn Coleman, Alex Pinto, Logan Anderson
+qcoleman@calpoly.edu, arpinto@calpoly.edu, lander24@calpoly.edu
+Lab 7 - CSC 369 Spring 2020
