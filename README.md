@@ -1,8 +1,10 @@
-# Hadoop Benchmarking
+# Hadoop Performance Benchmarking
 A performance experiment on sequential v.s. MapReduce frameworks using Apache Hadoop. Experiments run on the Cal Poly campus cluster. 
 
 Quinn Coleman, Alex Pinto, Logan Anderson
+
 qcoleman@calpoly.edu, arpinto@calpoly.edu, lander24@calpoly.edu
+
 Lab 7 - CSC 369 Spring 2020
 
 ### Report
