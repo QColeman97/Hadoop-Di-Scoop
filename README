@@ -1,15 +1,22 @@
+#Hadoop Benchmarking
+A performance experiment on sequential v.s. MapReduce frameworks using Apache Hadoop. Experiments run on the Cal Poly campus cluster. 
+
 Quinn Coleman, Alex Pinto, Logan Anderson
 qcoleman@calpoly.edu, arpinto@calpoly.edu, lander24@calpoly.edu
 Lab 7 - CSC 369 Spring 2020
 
+###Report
+View our lab report with results (here)[https://docs.google.com/document/d/1j5omkh1boeXXv9z7K9xetyM_Q-MoL19NoP6EpbJwG3s/edit?usp=sharing].
 
-Prob 2:
+###Running instructions
+
+Problem 2:
 
 IowaLiquorSequential:
 
     - Must have Iowa_Liquor_Sales.csv in the same directory
 
-Prob 3:
+Problem 3:
 
     - Output of Hadoop program "Correlation.java" goes to "./test/CovidCorrelation/"
 
